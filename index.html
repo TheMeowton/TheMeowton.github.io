@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AR showcase</title>
+	<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+	<style>
+		body {
+			margin: 0;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<a-scene embedded arjs="sourceType: webcam;">
+		  <a-marker preset="hiro">
+			<a-entity 
+				obj-model="obj: url(mine.obj); mtl: url(mine.mtl)">
+			</a-entity>
+				  
+		  </a-marker>
+	  <a-entity camera>
+	  </a-entity>
+	 </a-scene>
+</body>
+</html>
