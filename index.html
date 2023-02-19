@@ -12,15 +12,11 @@
 	</style>
 </head>
 <body>
-	<a-scene embedded arjs="sourceType: webcam;">
-		  <a-marker type="pattern" preset="hiro">
-			<a-entity 
-				obj-model="obj: url(mine.obj); mtl: url(mine.mtl)">
-			</a-entity>
-				  
-		  </a-marker>
-	  <a-entity camera>
-	  </a-entity>
+	<a-scene embedded arjs>
+		<a-entity obj-model="obj: url(mine.obj); mtl: url(mine.mtl)"></a-entity>
+		<a-marker-camera preset='hiro'></a-marker-camera>
+			
+			
 	 </a-scene>
 </body>
 </html>
